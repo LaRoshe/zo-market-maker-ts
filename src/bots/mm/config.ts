@@ -18,12 +18,12 @@ export interface MarketMakerConfig {
 export const DEFAULT_CONFIG: Omit<MarketMakerConfig, 'symbol'> = {
   spreadBps: 8,
   takeProfitBps: 0.1,
-  orderSizeUsd: 3000,
+  orderSizeUsd: 1000,
   closeThresholdUsd: 10,
-  warmupSeconds: 10,
-  updateThrottleMs: 100,
-  orderSyncIntervalMs: 3000,
+  warmupSeconds: 8,
+  updateThrottleMs: 70,
+  orderSyncIntervalMs: 2000,
   statusIntervalMs: 1000,
   fairPriceWindowMs: 5 * 60 * 1000, // 5 minutes
-  positionSyncIntervalMs: 5000,
+  positionSyncIntervalMs: 3000,
 }
